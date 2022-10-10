@@ -1,0 +1,292 @@
+1.7.17 (2022-10-03)
+fixed: avoid deprecated PROC_SIDEPANEL_ENUM*
+
+1.7.16 (2021-07-11)
+fixed: avoid deprecated menu actions MENU_*
+
+1.7.15 (2020-06-03)
+copy: "Find in Lines" from live branch (Python 3.6)
+
+1.7.08 (2019-09-02)
+final: The version is final for Python 3.5.
+
+1.7.08 (2019-08-26)
+added: Dialog "Find in lines" have both visible input: to instant find and to save history
+
+1.7.06 (2019-07-17)
+added: Command "Tabs\Find tab by title..."
+added: Command "Tabs\Activate tab by number..."
+
+1.7.05 (2019-07-09)
+added: "`" uses like " and ' in commands "Copy/Replace word", "Expand [and Copy ] selection to word"
+fixed: Rename file
+
+1.7.04 (2019-06-28)
+added: Command "Reverse selection text, by lines"
+
+1.7.03 (2019-06-18)
+added: Dialog "Find in Lines" can be non-modal and docked
+added: Command "Split lines by margin" keeps empty and blank-only lines in selection
+added: Command "Copy unicode char name"
+added: Call dialog "Symbol list" with commands "Symbols list (only 1/2 up level)"
+fixed: Skip non-text (e.g. picture) tabs in text-only commands
+
+1.7.01 (2019-03-28)
+added: Demand plugins cuda_kv_base, cuda_kv_dlg (auto installed by Addons Manager)
+fixed: Dialog "Symbol list" auto update symbol's tree
+
+1.6.02 (2019-03-14)
+added: Command "Open file by selected name" searches in current dir and also in TEMP
+
+1.5.33 (2019-03-02)
+fixed: Dialog "Symbol list" places initial listbox selection
+added: Command "Convert multi-line selection to column selection"
+
+1.5.32 (2019-01-24)
+fixed: Cancel doesnt act in dialog "Rename file"
+
+1.5.31 (2019-01-22)
+added: Command "Code Tree - Symbols list" to show Code Tree nodes in the menu form
+added: Improved command "Open all files from folder with sub-folders", so non-text files will be auto-opened (no asking) in binary viewer; but only in CudaText 1.71.6+
+
+1.5.30 (2018-12-06)
+fixed: Dialog for command "Rename file" is now resizable
+
+1.5.29 (2018-12-05)
+added: Command "Open all files from folder with sub-folders" made faster and not flickering
+added: Dialog "Rename file" made much wider
+
+1.5.28 (2018-12-03)
+fixed: Commands "Scroll current line to screen center/top/bottom" worked wrong on wrapped lines
+
+1.5.27 (2018-11-29)
+added: Commands "Jump to start/end of the nearest left staple"
+
+1.5.26 (2018-11-27)
+fixed: Tab Switcher dialog didn't close if Ctrl+<?> pressed and released very fast
+added: Tab Switcher dialog reacts to simple click too
+
+1.5.25 (2018-11-26)
+fixed: Messages for command "Fill selection by string"
+
+1.5.24 (2018-09-28)
+added: Paste trimmed text, Trim selection
+
+1.5.23 (2018-09-27)
+fixed: avoid deprecated API
+
+1.5.22 (2018-09-24)
+fixed: avoid deprecated API
+
+1.5.21 (2018-09-24)
+added: Commands "File \ Show in hex viewer" and "File \ Show in text editor"
+
+1.5.20 (2018-09-18)
+fixed: switcher
+
+1.5.19 (2018-08-28)
+fixed: layout for MacOS (Find in lines, Find in Tree)
+
+1.5.18 (2018-08-20)
+added: Command "File \ Save editors to a single file"
+
+1.5.17 (2018-08-17)
+changed: Command "Choose previously active tab to activate" allows to activate panels
+
+1.5.16 (2018-08-15)
+added: Command "Strip HTML tags"
+
+1.5.15 (2018-07-25)
+changed: Command "Activate previously active tab" works with only two tabs
+
+1.5.14 (2018-07-25)
+added: Command "Choose previously active tab". Dialog to switch to previously active tab
+
+1.5.13 (2018-07-23)
+fixed: Allow only digit in dialog "Reindent selected lines"
+
+1.5.12 (2018-06-01)
+added: "Find in lines": Call native Find (or Replace) dialog
+
+1.5.11 (2018-05-29)
+added: "Find in lines": Instant search minimum input size to start
+added: "Find in lines": Shift+Esc to close and restore initial selection
+added: "Code Tree: Find node": Shift+Esc to close and restore initial selection
+
+1.5.10 (2018-05-28)
+added: Instant search to dialog "Find in lines" (by option in local menu)
+
+1.5.09 (2018-05-28)
+changed: Command "File: Open recent file" stores data in "plugin history.json" (not in "user.json")
+changed: Command "Find in lines" stores data in "plugin history.json" (not in "user.json")
+changed: Command "Code Tree: Find node" stores data in "plugin history.json" (not in "user.json")
+changed: Dialog "Code Tree: Find node" uses [Shift+]Enter to jump (buttons for Alt+ <>,. are deleted)
+added: Dialog "Code Tree: Find node" has new menu command "Restore starting selection"
+
+1.5.08 (2018-05-23)
+added: command "Find in lines" to light search in text
+
+1.5.07 (2018-05-22)
+changed: command "Code Tree / Find node" - allow to jump over found nodes
+
+1.5.06 (2018-05-17)
+added: command "Code Tree / Find node"
+
+1.5.05 (2018-04-26)
+added: command "Align / Re-wrap/split comment at caret"
+
+1.5.04 (2018-04-18)
+fixed: app looks hanging on Linux, if command "Open files in dir+subdirs" opens 100+ files
+
+1.5.03 (2018-03-23)
+added: command "Open recent file" gives items <Show "name (path)">, <Show "path/name">
+added: command "Open recent file" gives items <Sort by name>, <Sort by path>, <Sort by time>
+
+1.5.02 (2018-03-13)
+added: command "Align indentation of selection(s)"
+
+1.5.01 (2018-02-28)
+added: all commands are visible in menu Plugins
+
+1.4.03 (2018-02-27)
+added: command "Open recent file"
+
+1.4.02 (2018-02-26)
+added: command "Bookmark list for current tab"
+added: command "Bookmark list for all tabs"
+added: command "Numbered bookmark list for all tabs"
+added: command "Indent lines like the first selected"
+added: commands "Align lines to center/right by margin"
+
+1.4.01 (2018-02-07)
+fixed: don't autostart plugin, events are used after first call of "Go back" command
+
+1.3.23 (2018-01-12)
+fixed: Reindent
+
+1.3.22 (2017-12-01)
+fixed: allow many file masks in "Open all files..." command
+
+1.3.21 (2017-12-01)
+added: command "Open current file in default application"
+
+1.3.20 (2017-09-26)
+fixed: command "Open all files from folder with sub-folders"
+
+1.3.19 (2017-09-18)
+added: command "Insert unicode char"
+
+1.3.18 (2017-09-12)
+added: commands "Right/Left jump into CamelCase/snake_case[ + select]"
+
+1.3.17 (2017-08-23)
+fixed: command "Reindent selected lines"
+
+1.3.16 (2017-08-16)
+added: move caret after commands "Scroll screen to left/right" if options are set: cuda_ext_horz_scroll_move_caret and caret_after_end
+
+1.3.15 (2017-08-14)
+added: command "Fill selection by string"
+added: option for horiz "Scroll ..." commands in user.json: cuda_ext_horz_scroll_size
+added: option for vert "Scroll ..." commands in user.json: cuda_ext_vert_indent
+
+1.3.14 (2017-08-11)
+added: commands "Scroll current line to screen top/bottom"
+added: commands "Scroll screen to left/right"
+
+1.3.12 (2017-07-19)
+fixed: don't skip punctuation in "Align paragraph"
+added: ask options on first call of "Align paragraph***"
+
+1.3.10 (2017-07-18)
+added: commands "Go to Beginning/End of Paragraph", "Go to Next/Prev Paragraph"
+added: commands "Align paragraph***"
+fixed: renamed commands
+
+1.3.03 (2017-07-12)
+fixed: don't use deprecated API
+
+1.3.02 (2017-06-30)
+added: commands "Jump to line with number in clipboard"
+
+1.3.01 (2017-06-28)
+added: 6 commands "Jump to next/previous changed/saved/working lines" (work by colored line status on gutter)
+
+1.2.9 (2017-06-16)
+added: cmd "Delete duplicate spaces"
+fixed: don't use deprecated API
+
+1.2.8 (2017-05-22)
+added: cmd "Open all files in dir and sub-dirs"
+added: cmd "Remove ASCII chars 0..31"
+
+1.2.7 (2017-03-30)
+added: 2 cmds "Switch tab to first/last in other group"
+
+1.2.6 (2016-12-30)
+added: cmd "Re-wrap/split lines by margin"
+
+1.2.5 (2016-09-13)
+removed: command "Edit lexer comment chars" removed to plugin Comments
+
+1.2.4 (2016-08-02)
+added: cmd "New file as save-as in current folder..."
+removed: dialog Favorites removed to its own plugin
+
+1.2.3 (2016-05-26)
+added: dlg Favorites
+
+1.2.2 (2016-05-26)
+changed: cmd "Go back" uses "visited history"
+
+1.2.0 (2016-05-23)
+added: cmd "Copy word or [expression] or 'expression'"
+added: cmd "Expand selection", which expands like: caret->word->'smth'->('smth')->f(smth)->...
+added: cmds "Switch tab in inactive group"
+
+1.1.0 (2016-05-19)
+internal rework
+
+1.0.8 (2016-05-16)
+added: cmd "Go back" to activate previous active tab
+added: cmds "Close tab in next/previous group"
+added: cmd "Show current tree path in status"
+added: cmd "Set nearest tree node"
+
+1.0.7 (2016-04-01)
+added: cmd "Navigate by error in console"
+changed: cmd "Open file by selected name" recognizes "path(line)"
+
+1.0.5 (2016-04-01)
+added: cmd "Paste with indent" like in IDEs
+
+1.0.4 (2016-02-24)
+added: cmd "Rename current file"
+added: cmd "Open file(s) near current tab"
+added: cmd "Move tab to position"
+
+1.0.3 (2016-02-14)
+added: used new API ed.get_prop(PROP_LINE_TOP)
+
+1.0.2 (2016-02-03)
+added: cmd "Scroll current line to screen center"
+added: cmd "Align in lines by separator"
+
+1.0.1 (2016-01-22)
+changed: renamed commands to use prefix "CudaExt:"
+
+0.9.5 (2016-01-22)
+added: cmd "Edit stream comment chars for lexer"
+
+0.9.4 (2016-01-14)
+added: cmd "Replace all fragment as selected to clipboard"
+rework: cmd "Find clipboard string" saves user find-settings
+
+0.9.2 (2016-01-11)
+added: cmd "Move splitters"
+
+0.9.1 (2015-12-26)
+added: cmd "Swith tab to next/previous"
+
+0.9.0 (2015-11-25)
+init
